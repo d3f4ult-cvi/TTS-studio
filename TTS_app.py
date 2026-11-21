@@ -109,7 +109,12 @@ with gr.Blocks(theme=gr.themes.Soft(), title="Text-to-Speech Studio") as demo:
 # 4. LAUNCH
 # ============================================================
 if __name__ == "__main__":
+    # Render provides PORT. Locally it falls back to 7860.
+    port = int(os.environ.get("PORT", 7860))
+    is_server = "PORT" in os.environ
+
     demo.queue(max_size=20).launch(
-        inbrowser=True,           # opens the default browser automatically
-        server_name="127.0.0.1",  # local only
+        server_name="0.0.0.0" if is_server else "127.0.0.1",
+        server_port=port,
+        inbrowser=not is_server,   # only auto-open a browser on your own PC
     )
