@@ -31,9 +31,7 @@ A lightweight web app built with Python, Gradio and gTTS.
 
 ## Preview
 
-> Add a screenshot of your app here:
->
-> `![TTS Studio Screenshot](screenshot.png)`
+![TTS Studio Screenshot](screenshot.png)
 
 ---
 
@@ -48,8 +46,8 @@ A lightweight web app built with Python, Gradio and gTTS.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/YOUR_USERNAME/tts-studio.git
-cd tts-studio
+git clone https://github.com/d3f4ult-cvi/TTS-studio.git
+cd TTS-studio
 
 # 2. (Optional) Create a virtual environment
 python -m venv .venv
@@ -102,11 +100,13 @@ flowchart LR
 ## Project Structure
 
 ```
-tts-studio/
+TTS-studio/
 ├── TTS_app.py         # Main application (logic + UI)
 ├── requirements.txt   # Python dependencies
 ├── run_app.bat        # Windows launcher
 ├── run_hidden.vbs     # Windows launcher without console window
+├── screenshot.png     # README preview image
+├── LICENSE
 ├── .gitignore
 └── README.md
 ```
@@ -149,7 +149,7 @@ Restart the app and the new voice appears in the dropdown.
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for details.
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ---
 
