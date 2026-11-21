@@ -1,4 +1,16 @@
+# Python
 __pycache__/
 *.pyc
 .venv/
+build_env/
+
+# Generated audio
 *.mp3
+
+# PyInstaller build output
+build/
+dist/
+*.spec
+
+# Inno Setup output
+installer_output/
